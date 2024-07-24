@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(139, 156, 156);
+}
+.calculator {
+  height: 520px;
+  width: 360px;
+  margin: 48px auto;
+  background-color: rgb(51, 72, 84);
+  box-shadow: 0px 5px 24px rgb(37, 43, 50);
+}
+.display {
+  padding: 32px;
+  display: block;
+  background-color: rgb(41, 62, 62);
+
+  color: #fff;
+}
+.display .operation {
+  font-size: 32px;
+  text-align: end;
+  display: block;
+}
+.display .value {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: end;
+}
+.keypad .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1px;
+  margin-bottom: 1px;
+}
+.keypad button {
+  flex: 1;
+  height: 72px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  background-color: rgb(68, 105, 105);
+}
+.row .dark {
+  background-color: rgb(19, 82, 82);
+}
